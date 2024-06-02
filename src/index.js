@@ -53,7 +53,7 @@ let onGameLoad = function() {
   }
 };
 
-var Module = {
+globalThis.Module = {
   preRun: [],
   postRun: [],
   print: function(text) {

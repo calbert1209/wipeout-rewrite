@@ -1,4 +1,4 @@
-var loadScript = (ev, src) => {
+function loadScript(ev, src) {
   ev.preventDefault();
 
   // Hide select-version, show loader

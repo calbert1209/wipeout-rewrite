@@ -22,7 +22,7 @@ var requestFullscreen = (ev) => {
 };
 
 document.getElementById('select-version').style.display = 'block';
-document.getElementById('fullscreen').addEventListener('click', (ev) => requestFullscreen(ev, 'wipeout.js'))
+document.getElementById('fullscreen').addEventListener('click', (ev) => requestFullscreen(ev))
 document.getElementById('load-full-version').addEventListener('click', (ev) => loadScript(ev, 'wipeout.js'));
 document.getElementById('load-minimal-version').addEventListener('click', (ev) => loadScript(ev, 'wipeout-minimal.js'));
 

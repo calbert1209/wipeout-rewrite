@@ -157,7 +157,7 @@ COMMON_OBJ_WASM = $(patsubst %.c, $(BUILD_DIR_WASM)/%.o, $(COMMON_SRC))
 COMMON_DEPS_WASM = $(patsubst %.c, $(BUILD_DIR_WASM)/%.d, $(COMMON_SRC))
 
 wasm: wasm_full wasm_minimal
-	cp src/wasm-index.html $(WASM_RELEASE_DIR)/game.html
+	cp src/wasm-index.html $(WASM_RELEASE_DIR)/index.html
 
 
 wasm_full: $(BUILD_DIR_WASM)/src/platform_sokol.o

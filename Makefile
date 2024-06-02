@@ -158,6 +158,8 @@ COMMON_DEPS_WASM = $(patsubst %.c, $(BUILD_DIR_WASM)/%.d, $(COMMON_SRC))
 
 wasm: wasm_full wasm_minimal
 	cp src/wasm-index.html $(WASM_RELEASE_DIR)/index.html
+	cp src/index.js $(WASM_RELEASE_DIR)/index.js
+	cp src/styles.css $(WASM_RELEASE_DIR)/styles.css
 
 
 wasm_full: $(BUILD_DIR_WASM)/src/platform_sokol.o
